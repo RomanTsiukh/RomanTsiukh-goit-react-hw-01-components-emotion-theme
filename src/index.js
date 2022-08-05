@@ -2,14 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
 import './index.css';
-import { ThemeProvider } from '@emotion/styled';
-
-const theme = {
-  colors: {
-    text: 'black',
-    accent: 'green',
-  },
-};
+import { ThemeProvider } from '@emotion/react';
+import { theme } from './theme';
+// import './components/GlobalStyle';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

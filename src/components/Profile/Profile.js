@@ -1,29 +1,80 @@
 import PropTypes from 'prop-types';
-import { 
-  Container, 
-  Description, 
-  Image, 
-  Name, 
-  Tag, 
-  Location, 
-  List, 
-  ListItem, 
-  Text, 
-  Value 
-} from './Profile.styled';
+import styled from '@emotion/styled';
+
+const Container = styled.div`
+  width: 350px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* text-align: center; */
+  box-shadow: 0px 4px 12px 0px rgba(100, 99, 99, 0.7);
+  outline: 2px solid black;
+
+  /* margin-bottom: ${p => p.theme.space[5]}px; */
+  /* background-color: ${p => p.theme.colors.firstBgColor}; */
+`;
+
+export const Description = styled.div`
+  padding: ${p => p.theme.space[4]}px;
+  outline: 1px solid black;
+`;
+
+export const Image = styled.img`
+  width: 40%;
+  margin-bottom: ${p => p.theme.space[4]}px;
+`;
+
+export const Name = styled.p`
+  font-weight: ${p => p.theme.fontWeights.bold};
+  margin-bottom: ${p => p.theme.space[3]};
+`;
+
+export const Tag = styled.p`
+  margin-bottom: ${p => p.theme.space[3]}px;
+  color: ${p => p.theme.colors.secondTextColor};
+`;
+
+export const Location = styled.p`
+  color: ${p => p.theme.colors.secondTextColor};
+`;
+
+export const List = styled.ul`
+  display: flex;
+
+  font-size: ${p => p.theme.fontSizes.m};
+  background-color: ${p => p.theme.colors.secondBgColor};
+`;
+
+export const ListItem = styled.li`
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid black;
+
+  padding: ${p => p.theme.space[3]}px ${p => p.theme.space[0]}px;
+`;
+
+export const Text = styled.span`
+  font-size: ${p => p.theme.fontSizes.m};
+  color: ${p => p.theme.colors.secondTextColor};
+`;
+
+export const Value = styled.span`
+  font-size: ${p => p.theme.fontSizes.m};
+  font-weight: ${p => p.theme.fontWeights.bold};
+`;
 
 export function Profile(props) {
-    console.log(props)
-    const { link, usname, ustag, locat, folowers, views, likes } = props
-    return (
-      <Container>
-        <Description>
-          <Image src={link} alt="User avatar"/>
-          <Name>{usname}</Name>
-          <Tag>@{ustag}</Tag>
-          <Location>{locat}</Location>
-        </Description>
-      
+  console.log(props);
+  const { link, usname, ustag, locat, folowers, views, likes } = props;
+  return (
+    <Container>
+      <Description>
+        <Image src={link} alt="User avatar" />
+        <Name>{usname}</Name>
+        <Tag>@{ustag}</Tag>
+        <Location>{locat}</Location>
+      </Description>
+
       <List>
         <ListItem>
           <Text>Followers</Text>
@@ -38,16 +89,16 @@ export function Profile(props) {
           <Value>{likes}</Value>
         </ListItem>
       </List>
-      </Container>
-    );
-  };
+    </Container>
+  );
+}
 
-  Profile.propTypes = {
-    link: PropTypes.string.isRequired,
-    usname: PropTypes.string.isRequired,
-    ustag: PropTypes.string.isRequired,
-    locat: PropTypes.string.isRequired,
-    folowers: PropTypes.number.isRequired,
-    views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired,
-  };
+Profile.propTypes = {
+  link: PropTypes.string.isRequired,
+  usname: PropTypes.string.isRequired,
+  ustag: PropTypes.string.isRequired,
+  locat: PropTypes.string.isRequired,
+  folowers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
+};
