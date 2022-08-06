@@ -3,15 +3,9 @@ import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
 const Container = styled.div`
-  /* margin-left: auto;
-  margin-right: auto;
-  text-align: center; */
   box-shadow: 0px 4px 12px 0px rgba(100, 99, 99, 0.7);
   outline: 2px solid black;
   width: 350px;
-
-  /* margin-bottom: ${p => p.theme.space[5]}px; */
-  /* background-color: ${p => p.theme.colors.firstBgColor}; */
 `;
 
 const Titel = styled.h2`

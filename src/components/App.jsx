@@ -1,7 +1,7 @@
 import { Profile } from './Profile/Profile';
 import { StatisticsList } from './Statistics/StatisticsList';
 import { FriendList } from './Friends/FriendList';
-// import { GlobalStyle } from './GlobalStyle';
+// import GlobalStyle from './GlobalStyle';
 import { TransactionHistory } from './Transaction/TransactionHistory';
 import user from './Profile/user.json';
 import stats from './Statistics/data.json';
@@ -19,7 +19,6 @@ export function App() {
       color="mainTextColor"
       p={5}
       width="1"
-      position="relative"
       text-content="center"
     >
       {/* <GlobalStyle /> */}

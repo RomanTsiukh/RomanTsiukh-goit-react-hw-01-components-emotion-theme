@@ -1,9 +1,4 @@
 import PropTypes from 'prop-types';
-// import {
-//   Item,
-//   Label,
-//   Value
-// } from './Statistics.styled';
 import styled from '@emotion/styled';
 
 function getRandomHexColor() {

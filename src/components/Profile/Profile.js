@@ -3,48 +3,41 @@ import styled from '@emotion/styled';
 
 const Container = styled.div`
   width: 350px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* text-align: center; */
   box-shadow: 0px 4px 12px 0px rgba(100, 99, 99, 0.7);
   outline: 2px solid black;
-
-  /* margin-bottom: ${p => p.theme.space[5]}px; */
-  /* background-color: ${p => p.theme.colors.firstBgColor}; */
 `;
 
-export const Description = styled.div`
+const Description = styled.div`
   padding: ${p => p.theme.space[4]}px;
   outline: 1px solid black;
 `;
 
-export const Image = styled.img`
+const Image = styled.img`
   width: 40%;
   margin-bottom: ${p => p.theme.space[4]}px;
 `;
 
-export const Name = styled.p`
+const Name = styled.p`
   font-weight: ${p => p.theme.fontWeights.bold};
-  margin-bottom: ${p => p.theme.space[3]};
+  margin-bottom: ${p => p.theme.space[3]}px;
 `;
 
-export const Tag = styled.p`
+const Tag = styled.p`
   margin-bottom: ${p => p.theme.space[3]}px;
   color: ${p => p.theme.colors.secondTextColor};
 `;
 
-export const Location = styled.p`
+const Location = styled.p`
   color: ${p => p.theme.colors.secondTextColor};
 `;
-
-export const List = styled.ul`
+const List = styled.ul`
   display: flex;
 
   font-size: ${p => p.theme.fontSizes.m};
   background-color: ${p => p.theme.colors.secondBgColor};
 `;
 
-export const ListItem = styled.li`
+const ListItem = styled.li`
   width: calc(100% / 3);
   display: flex;
   flex-direction: column;
@@ -53,12 +46,12 @@ export const ListItem = styled.li`
   padding: ${p => p.theme.space[3]}px ${p => p.theme.space[0]}px;
 `;
 
-export const Text = styled.span`
+const Text = styled.span`
   font-size: ${p => p.theme.fontSizes.m};
   color: ${p => p.theme.colors.secondTextColor};
 `;
 
-export const Value = styled.span`
+const Value = styled.span`
   font-size: ${p => p.theme.fontSizes.m};
   font-weight: ${p => p.theme.fontWeights.bold};
 `;

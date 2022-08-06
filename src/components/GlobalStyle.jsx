@@ -1,7 +1,8 @@
 // import { injectGlobal } from '@emotion/css';
 
-// export const GlobalStyle = injectGlobal`
+// let GlobalStyle = '';
 
+// export const GlobalStyle = injectGlobal`
 //  body {
 //   margin: 0;
 //   padding: 10px;
@@ -19,11 +20,7 @@
 //     monospace;
 // }
 
-// h2 {
-//   margin: 0;
-// }
-
-// p {
+// h2, p {
 //   margin: 0;
 // }
 
