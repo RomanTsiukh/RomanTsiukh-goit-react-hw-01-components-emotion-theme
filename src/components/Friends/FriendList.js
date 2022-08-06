@@ -1,6 +1,5 @@
 import { FriendListItem } from 'components/Friends/FriendListItem';
 import PropTypes from 'prop-types';
-
 import styled from '@emotion/styled';
 
 const List = styled.ul`
