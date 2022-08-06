@@ -1,13 +1,15 @@
 import { Profile } from './Profile/Profile';
 import { StatisticsList } from './Statistics/StatisticsList';
 import { FriendList } from './Friends/FriendList';
-// import GlobalStyle from './GlobalStyle';
 import { TransactionHistory } from './Transaction/TransactionHistory';
+import { Box } from './Box';
+
+// import GlobalStyle from './GlobalStyle';
+
 import user from './Profile/user.json';
 import stats from './Statistics/data.json';
 import friends from './Friends/friends.json';
 import transactions from './Transaction/transactions.json';
-import { Box } from './Box';
 
 export function App() {
   return (
@@ -20,6 +22,8 @@ export function App() {
       p={5}
       width="1"
       text-content="center"
+      fontFamily="Ubuntu"
+      fontSize={16}
     >
       {/* <GlobalStyle /> */}
       <Box as="section" mb={5} bg="firstBgColor" textAlign="center">

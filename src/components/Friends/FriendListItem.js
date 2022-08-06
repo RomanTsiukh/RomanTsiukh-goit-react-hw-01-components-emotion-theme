@@ -33,7 +33,7 @@ const Image = styled.img`
   margin-right: ${p => p.theme.space[4]}px;
 `;
 
-export const Name = styled.p`
+const Name = styled.p`
   font-size: ${p => p.theme.fontSizes.m};
 `;
 
