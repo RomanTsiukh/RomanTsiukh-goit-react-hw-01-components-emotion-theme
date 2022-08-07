@@ -4,7 +4,7 @@ import { FriendList } from './Friends/FriendList';
 import { TransactionHistory } from './Transaction/TransactionHistory';
 import { Box } from './Box';
 
-// import GlobalStyle from './GlobalStyle';
+import './GlobalStyle';
 
 import user from './Profile/user.json';
 import stats from './Statistics/data.json';
@@ -25,7 +25,6 @@ export function App() {
       fontFamily="Ubuntu"
       fontSize={16}
     >
-      {/* <GlobalStyle /> */}
       <Box as="section" mb={5} bg="firstBgColor" textAlign="center">
         <Profile
           link={user.avatar}
